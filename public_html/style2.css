@@ -20,6 +20,17 @@ blauw:  #5c90db
 roze:   #ffc0cb
 */
 
+
+.clearFix:before, .clearFix:after {
+    content:" ";
+    display: table;
+}
+.clearFix:after {
+    clear: both;
+}
+
+
+
 body{
     margin: 0;
     padding: 0;
@@ -27,9 +38,15 @@ body{
     color: #222222;  
 }
 
+.schilderstijl {
+    font-size: 1.05em;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+}
+
 /*******MOBILE FIRST********/
 
-/* Header opmaak */
+/************************************* Header opmaak */
 header h1 {
     margin-left: 0.8em
 }
@@ -76,7 +93,7 @@ header ul li:hover {
     color: inherit;
     text-decoration: none;
 }
-#andere ul li :hover {
+#andere ul li:hover {
     color: inherit;
     text-decoration: underline;
 }
@@ -89,10 +106,149 @@ header ul li:hover {
 .links img {
     width: 100%;
 }
-
-
-
-@media screen and (max-width:640px) {
-    .desktop {display: none;}
-    
+.desktop {
+    display: none;
 }
+
+
+
+
+
+/******************************************************************/
+/*******************************************DESKTOP EDITION********/
+/******************************************************************/
+@media screen and (min-width:640px) {
+    .desktop {display: block;} 
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: red;
+    background-image: url(img/rothko/rothko17.jpg);
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #222222;
+}
+.container {
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+/************************************* Header opmaak */
+header {
+    background-color:#373737;
+    margin:1.5em 0;
+}
+header h1 {
+    color: white;
+}
+header ul{
+    position: absolute;
+    top: 25px;
+    right: 55px;
+    background-color: inherit;
+}
+header ul li{
+    display: inline-block;
+}
+header ul li:hover{
+    background-color: inherit;
+    color: #5c90db;
+}
+
+/*************************************Opmaak van .links en .rechts**/
+.links{
+    width:70%;
+    float: left;
+    background-color: white;
+}
+.rechts{
+    width: 28%;
+    float: right;
+    background-color: #272727;
+}
+.inhoud {
+    padding:4% 7%;
+}
+.inhoud h2{
+    font-size: 2em;
+    margin: 0 0 0.5em 0;
+}
+.inhoud h3{
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+/*************************************Opmaak van aside**/
+aside {
+
+}
+aside h3{
+    margin-top:0;
+    font-size:1.5em;
+    font-style: italic;
+}
+/*************************************Opmaak van Feiten en Weetjes**/
+#weetjes {
+    background-color: #474747;
+    padding:2.5em;
+    color:white;
+}
+
+#weetjes h4 {
+    margin: 0.5em 0
+}
+#weetjes date {
+    padding-left: 2em;
+}
+
+/*************************************Opmaak van Tags***************/
+#tags {
+    color:white;
+    padding:2.5em;
+    background-color: #373737
+}
+#tags ul{
+    list-style: none;
+    padding: 0;
+}
+#tags ul li {
+    padding: 0.6em;
+    margin: 0.25em 0;
+    background: #272727;
+    border-radius: 0.8em;
+}
+#tags ul li:hover {
+    background:#575757; 
+}
+#tags input {
+    position: relative;
+    right: 20px;
+    float:right;   
+}
+/*************************************Opmaak van Andere werken***************/
+#andere {
+    padding: 2em
+}
+#andere ul{
+    list-style:none;
+    padding:0;
+    margin:0
+}
+#andere ul a h4{
+    display: none;
+}
+#andere img {
+    display: block;
+    width: 42.5%;
+    float: left;
+    border: 4px solid #ffc0cb;
+    margin: 0.3em;
+    height: 4em;
+}
+#andere h3{
+    padding:0;
+}
+
+}   /****EINDE MEDIA QUERY****/

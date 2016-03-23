@@ -15,7 +15,7 @@ and open the template in the editor.
         <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <header>
+        <header class="clearFix">
             <div class="container">
                 <h1>ArtStudio</h1>
                 <ul>
@@ -29,7 +29,7 @@ and open the template in the editor.
         </header>
         
         <div class="container">
-            <aside>
+            <aside class="rechts">
                 <section class="desktop" id="weetjes">
                     <h3>Feiten & weetjes</h3>
                     <h4>geboren</h4>
@@ -41,49 +41,51 @@ and open the template in the editor.
                 <section class="desktop" id="tags">
                     <h3>Tags</h3>
                     <ul>
-                        <li>Realisme</li>
-                        <li>Impressionisme</li>
-                        <li>Post-impressionisme</li>
+                        <li>Realisme<input type="checkbox" /></li>
+                        <li>Impressionisme<input type="checkbox" /></li>
+                        <li>Post-impressionisme<input type="checkbox" /></li>
                     </ul>
                 </section>
                 
                 <section id="andere">
                     <h3>Andere werken</h3>
-                    <ul>
-                        <li><a href="#"><img src="img/sorolla/otra_marguerita.JPG" alt=""><h4>otra marguerita</h4></a></li>
-                        <li><a href="#"><img src="img/sorolla/joaquin sorolla.jpg" alt=""><h4>Joaquin Sorolla</h4></a></li>
-                        <li><a href="#"><img src="img/sorolla/chicos_en_la_playa.jpg" alt=""><h4>chicos_en_la_playa</h4></a></li>
-                        <li><a href="#"><img src="img/sorolla/la_bata_rosa.jpg" alt=""><h4>La bata rosa</h4></a></li>
-                        <li><a href="#"><img src="img/sorolla/barkas.jpg" alt=""><h4>barkas</h4></a></li>
-                        <li><a href="#"><img src="img/sorolla/La_vuelta_de_la_pesca.jpg" alt=""><h4>La vuelta de la pesca</h4></a></li>
-                        <li><a href="#"><img src="img/sorolla/flores.jpg" alt=""><h4>Flores</h4></a></li>
+                    <ul class="clearFix">
+                        <li><a href="paintings/otra_marguerita.html"><img src="img/sorolla/otra_marguerita.JPG" alt=""><h4>otra marguerita</h4></a></li>
+                        <li><a href="paintings/joaquin sorolla.html"><img src="img/sorolla/joaquin sorolla.jpg" alt=""><h4>Joaquin Sorolla</h4></a></li>
+                        <li><a href="paintings/chicos_en_la_playa.html"><img src="img/sorolla/chicos_en_la_playa.jpg" alt=""><h4>chicos_en_la_playa</h4></a></li>
+                        <li><a href="paintings/la_bata_rosa.html"><img src="img/sorolla/la_bata_rosa.jpg" alt=""><h4>La bata rosa</h4></a></li>
+                        <li><a href="paintings/barkas.html"><img src="img/sorolla/barkas.jpg" alt=""><h4>barkas</h4></a></li>
+                        <li><a href="paintings/La_vuelta_de_la_pesca.html"><img src="img/sorolla/La_vuelta_de_la_pesca.jpg" alt=""><h4>La vuelta de la pesca</h4></a></li>
+                        <li><a href="paintings/flores.html"><img src="img/sorolla/flores.jpg" alt=""><h4>Flores</h4></a></li>
                     </ul>
                 </section>
          
             </aside>
             <section class="links">
-                <h2>Joaquin Sorolla y Bastida</h2>
-                <h3>de meester van het licht</h3>
-                <p>Joaquin Sorolla was een brilliant schilder die ondanks talloze tentoonstellingen in Europe en Amerika - die grote aantallen bezoekers kregen - 
-                toch onvoldoende bekend is buiten zijn geboorteland Spanje.</p>
-                <p>Sorolla was gespecialiseerd in portretten, landschappen en werken met een sociaal of historisch thema.
-                    Zijn eerste grote succes was "Otra Marguerita", een sociaal realistisch werk naar een thema uit Faust Het toont het drama van vrouw die na een buitenechtelijke 
-                    zwangerschap haar kind verstikte.</p>
-                
-                <img src="img/sorolla/triste_herensia.jpg" alt="">
-                
-                <p>Zijn echte grote doorbraak kwam er met "Triste herensia" waar hij opnieuw een sociaal thema aansnijdt, nl. de gevolgen van polio op de spaanse kinderbevolking.</p>
-                <p>Zijn vroege werk kan gerekend worden tot het <span>realisme</span>, maar gaandeweg veranderde zijn stijl zich richting <span>impressionisme</span>, maar werd het niet 
-                helemaal en ontwikkelde een eigen stijl. Hij werkte dan vooral in de buitenlucht en schilderde talloze strandscene's aan de Middellands zee rond Valencia.</p>
-                <p>Neem nu bijvoorbeeld het werk "Chicos en la playa" of "Después del baño", daar zie je het schitterende kleurenpalet van Sorolla waarmee hij alle nuances van strand, de zee, de schittering van het licht vangt. 
-                Hij was ongeëvenaard in het weergeven van schaduwen en lichtpartijen onder de felle mediterane zon.</p>
-                
-                <img src="img/sorolla/paseo_por_la_playa.jpg" alt="">
-                
-                <p>Op het hoogtepunt van zijn carriëre was S. eer productief en maakte enerzijds veel protretten (o.a. van koning Alfonso) en strandscenes, in een stijl die Luminisme genoemd werd, door de meesterlijke weergave van licht en schaduw. De meeste auteurs plaatsen deze stijl onder het post-impressionisme, 
-                door het rijke kleurenpalet, de beweging en de vaag-realistische figuren.</p>
-                <p>Hij was ook een zeer snel schetser, liet soms compleet na te tekenen en schilderde meteen, alles op het strand zelf.</p>
-                <p>Hij was een goede vriend van de Amerikaanse portrettist John Singer Sergeanten bezocht hem meermaals in de USA en in Parijs. Zijn invloed valt af te leiden uit sommige portretten.</p>
+                <div class="inhoud">
+                    <h2>Joaquin Sorolla y Bastida</h2>
+                    <h3>de meester van het licht</h3>
+                    <p>Joaquin Sorolla was een brilliant schilder die ondanks talloze tentoonstellingen in Europe en Amerika - die grote aantallen bezoekers kregen - 
+                    toch onvoldoende bekend is buiten zijn geboorteland Spanje.</p>
+                    <p>Sorolla was gespecialiseerd in portretten, landschappen en werken met een sociaal of historisch thema.
+                        Zijn eerste grote succes was "Otra Marguerita", een sociaal realistisch werk naar een thema uit Faust Het toont het drama van vrouw die na een buitenechtelijke 
+                        zwangerschap haar kind verstikte.</p>
+
+                    <img src="img/sorolla/triste_herensia.jpg" alt="">
+
+                    <p>Zijn echte grote doorbraak kwam er met "Triste herensia" waar hij opnieuw een sociaal thema aansnijdt, nl. de gevolgen van polio op de spaanse kinderbevolking.</p>
+                    <p>Zijn vroege werk kan gerekend worden tot het <span class="schilderstijl">realisme</span>, maar gaandeweg veranderde zijn stijl zich richting <span class="schilderstijl">impressionisme</span>, maar werd het niet 
+                    helemaal en ontwikkelde een eigen stijl. Hij werkte dan vooral in de buitenlucht en schilderde talloze strandscene's aan de Middellands zee rond Valencia.</p>
+                    <p>Neem nu bijvoorbeeld het werk "Chicos en la playa" of "Después del baño", daar zie je het schitterende kleurenpalet van Sorolla waarmee hij alle nuances van strand, de zee, de schittering van het licht vangt. 
+                    Hij was ongeëvenaard in het weergeven van schaduwen en lichtpartijen onder de felle mediterane zon.</p>
+
+                    <img src="img/sorolla/paseo_por_la_playa.jpg" alt="">
+
+                    <p>Op het hoogtepunt van zijn carriëre was S. eer productief en maakte enerzijds veel protretten (o.a. van koning Alfonso) en strandscenes, in een stijl die <span class="schilderstijl">Luminisme</span> genoemd werd, door de meesterlijke weergave van licht en schaduw. De meeste auteurs plaatsen deze stijl onder het <span class="schilderstijl">post-impressionisme</span>, 
+                    door het rijke kleurenpalet, de beweging en de vaag-realistische figuren.</p>
+                    <p>Hij was ook een zeer snel schetser, liet soms compleet na te tekenen en schilderde meteen, alles op het strand zelf.</p>
+                    <p>Hij was een goede vriend van de Amerikaanse portrettist John Singer Sergeanten bezocht hem meermaals in de USA en in Parijs. Zijn invloed valt af te leiden uit sommige portretten.</p>
+                </div>        
             </section>
             
         </div>
