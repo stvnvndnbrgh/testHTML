@@ -13,13 +13,14 @@ grijs1: #272727
 grijs2: #373737
 grijs3: #474747
 grijs4: #575757
+grijs5: #ececec
 grijs6: #f5f5f5
 rood:   #ff0000
 blauw:  #5c90db
 roze:   #ffc0cb
 */
 
-body,{
+body{
     margin: 0;
     padding: 0;
     font-family: 'Roboto Condensed', sans-serif;
@@ -34,7 +35,7 @@ header h1 {
 }
 header ul {
     list-style: none;
-    background-color: #575757;
+    background-color: #474747;
     padding-left:0;
     margin-bottom: 0;
 }
@@ -44,10 +45,13 @@ header ul li{
     padding: 0.5em 0 0.5em 1.2em;
  
 }
-
-/* Section Andere Werken Opmaak */
+header ul li:hover {
+    background-color: #ececec;
+    color: inherit;
+}
+/*********************************** Section Andere Werken Opmaak */
 #andere {
-    background-color: #373737;
+    background-color: #272727;
     margin-top:0;
     color: white;
 }
@@ -72,9 +76,18 @@ header ul li{
     color: inherit;
     text-decoration: none;
 }
+#andere ul li :hover {
+    color: inherit;
+    text-decoration: underline;
+}
+
+
+/***************************** Section .links Opmaak */
+.links {
+    padding: 0.5em
+}
 .links img {
-    width: 95%;
-    margin: 0 auto;
+    width: 100%;
 }
 
 
